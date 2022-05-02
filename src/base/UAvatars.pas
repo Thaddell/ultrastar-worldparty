@@ -149,7 +149,7 @@ end;
 
 function TAvatar.GetTexture(): TTexture;
 begin
-  Result := Texture.LoadTexture(Filename);
+  Result := Texture.LoadTexture(Filename), TEXTURE_TYPE_TRANSPARENT, 0);
 end;
 
 
