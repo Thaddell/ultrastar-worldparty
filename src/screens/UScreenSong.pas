@@ -1023,12 +1023,12 @@ begin
           Self.Button[B].Y := Y + (H + Padding) * (Line - Self.MinLine);
           if Index = Self.Interaction then
           begin
-            Self.Button[B].Z := 1;
+            Self.Button[B].Z := 0.3;
             Self.LoadMainCover();
           end
           else
           begin
-            Self.Button[B].Z := 0.9;
+            Self.Button[B].Z := 0;
             Self.Button[B].SetSelect(false);
           end;
         end
