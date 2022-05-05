@@ -149,7 +149,7 @@ end;
 
 function TAvatar.GetTexture(): TTexture;
 begin
-  Result := Texture.LoadTexture(Filename);
+  Result := Texture.LoadTexture(Filename, TEXTURE_TYPE_TRANSPARENT);
 end;
 
 
@@ -421,7 +421,7 @@ begin
   end;
 
   // Convert pixel format as needed
-  AdjustPixelFormat(Thumbnail, TEXTURE_TYPE_PLAIN);
+  AdjustPixelFormat(Thumbnail, TEXTURE_TYPE_TRANSPARENT);
 
   Info.AvatarWidth  := Thumbnail^.w;
   Info.AvatarHeight := Thumbnail^.h;
